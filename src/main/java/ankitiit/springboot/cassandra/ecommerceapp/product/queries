@@ -1,0 +1,29 @@
+Human Query: "Get all products."
+Update: Retrieve all records from the products table.
+
+Human Query: "Get product with ID 123."
+Update: Retrieve the record from the products table with ID 123.
+
+Human Query: "Get products in category 'Electronics'."
+Update: Retrieve all records from the products table that have a category ID matching the ID of the "Electronics" category.
+
+Human Query: "Get products with a price less than $50."
+Update: Retrieve all records from the products table where the price is less than $50.
+
+Human Query: "Get products that have a rating of 4 or higher."
+Update: Retrieve all records from the products table that have an average rating of 4 or higher.
+
+Human Query: "Get products that have at least 10 in stock."
+Update: Retrieve all records from the products table that have a quantity of at least 10 in the inventory table.
+
+Human Query: "Get the most popular products."
+Update: Retrieve the top x records from the products table based on their purchase frequency or popularity.
+
+Human Query: "Get products that have been reviewed."
+Update: Retrieve all records from the products table that have at least one record in the reviews table.
+
+Human Query: "Get products that have been reviewed by customer with ID 123."
+Update: Retrieve all records from the products table that have at least one record in the reviews table with a customer ID of 123.
+
+Human Query: "Get products that have been reviewed with a rating of 3 or higher."
+Update: Retrieve all records from the products table that have at least one record in the reviews table with a rating of 3 or higher.

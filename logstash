@@ -1,0 +1,3 @@
+Go to bin and execute below command to start logstash from Command prompt
+! Please run it form command prompt only
+logstash.bat -f bin/logstash.conf

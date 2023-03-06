@@ -1,0 +1,23 @@
+# Local Cassandra
+spring:
+  data:
+    cassandra:
+      port: 9042
+      contact-points: 127.0.0.1
+      keyspace-name: ecommercekeyspace
+      entity-base-package: ankitiit.springboot.cassandra
+      schema-action: CREATE_IF_NOT_EXISTS
+
+
+# Azure Cosmos Cassandra -API
+#spring:
+#  data:
+#    cassandra:
+#      contact-points: ankitiit-database.cassandra.cosmos.azure.com
+#      port: 10350
+#      keyspace-name: schoolkeyspace
+#      entity-base-package: ankitiit.springboot.cassandra.dto
+#      username : ankitiit-database
+#      password : uYd031G6IM6L6q6JP80xZSV2kgDF6UBDS3gyDalzA7sJfxZpzpJquUgPrGrqK4Rpn7u4RdDm3XZh7ALNJmvp4A==
+#      ssl : true
+#      #local-datacenter: westus

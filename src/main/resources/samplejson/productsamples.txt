@@ -1,0 +1,65 @@
+Example 1:
+{
+    "id": 1,
+    "name": "iPhone 12 Pro",
+    "description": "The latest iPhone with advanced camera and 5G capabilities",
+    "price": 999.99,
+    "categoryId": 1,
+    "rating": 4.5,
+    "inventoryId": 1,
+    "popularity": 10,
+    "reviewed": true
+}
+
+Example 2:
+{
+    "id": 2,
+    "name": "Samsung Galaxy S21",
+    "description": "The latest Samsung flagship with advanced camera and 5G capabilities",
+    "price": 899.99,
+    "categoryId": 1,
+    "rating": 4.3,
+    "inventoryId": 2,
+    "popularity": 8,
+    "reviewed": true
+}
+
+Example 3:
+{
+    "id": 3,
+    "name": "MacBook Pro",
+    "description": "The latest MacBook Pro with advanced specs and design",
+    "price": 1499.99,
+    "categoryId": 2,
+    "rating": 4.8,
+    "inventoryId": 3,
+    "popularity": 15,
+    "reviewed": true
+}
+
+Example 4:
+{
+    "id": 4,
+    "name": "Dell XPS 13",
+    "description": "The latest Dell laptop with advanced specs and design",
+     "price": 999.99,
+     "categoryId": 2,
+     "rating": 4.7,
+     "inventoryId": 4,
+     "popularity": 12,
+     "reviewed": true
+ }
+
+
+ Example 5:
+ {
+ "id": 5,
+ "name": "Sony A7 III",
+ "description": "The latest Sony camera with advanced specs and design",
+ "price": 1999.99,
+ "categoryId": 3,
+ "rating": 4.9,
+ "inventoryId": 5,
+ "popularity": 18,
+ "reviewed": true
+ }
