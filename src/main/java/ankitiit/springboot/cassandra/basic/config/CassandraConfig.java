@@ -11,10 +11,17 @@ import org.springframework.data.cassandra.core.AsyncCassandraTemplate;
 import org.springframework.data.cassandra.core.CassandraTemplate;
 import org.springframework.data.cassandra.core.ReactiveCassandraTemplate;
 
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+
 @Configuration
 public class CassandraConfig {
-    public @Bean CqlSession session() {
-        return CqlSession.builder().withKeyspace("ecommercekeyspace").build();
+    public @Bean CqlSession session() throws Exception {
+        
+        return CqlSession.builder()
+                .addContactPoint(new InetSocketAddress("localhost", 9042))
+                .withLocalDatacenter("datacenter1")
+                .withKeyspace("ecommercekeyspace").build();
     }
 
     @Bean
@@ -42,6 +49,5 @@ public class CassandraConfig {
     CqlSession session = CqlSession.builder()
             .withConfigLoader(configLoader)
             .build();*/
-
 
 }

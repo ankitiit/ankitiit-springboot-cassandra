@@ -49,14 +49,16 @@ public class TeacherController {
     @Autowired
     private ObjectMapper objectMapper;
 
+    ExecutorService executor = Executors.newFixedThreadPool(10);
+
     @GetMapping(value="/bulkInsert")
     public void bulkInsert() throws Exception{
         List<Teacher> teacherList = objectMapper.readValue(new File("E:\\ProfessionalData\\SpringBootProjects\\JsonData\\teacher643k.json"), new TypeReference<List<Teacher>>(){});
         //teacherList = teacherList.stream().limit(100).collect(Collectors.toList());
-       //teacherList = teacherList.stream().limit(200).collect(Collectors.toList());
+        //teacherList = teacherList.stream().limit(200).collect(Collectors.toList());
         Instant startTime = Instant.now();
-        List<List<Teacher>> batches = Lists.partition(teacherList, 1500);
-        ExecutorService executor = Executors.newFixedThreadPool(10);
+        List<List<Teacher>> batches = Lists.partition(teacherList, 200);
+
 
         for (List<Teacher> batch : batches) {
             CassandraBatchOperations batchOps = cassandraTemplate.batchOps();

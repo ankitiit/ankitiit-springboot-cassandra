@@ -3,10 +3,11 @@ spring:
   data:
     cassandra:
       port: 9042
-      contact-points: 127.0.0.1
+      contact-points: localhost
       keyspace-name: ecommercekeyspace
       entity-base-package: ankitiit.springboot.cassandra
       schema-action: CREATE_IF_NOT_EXISTS
+      local-datacenter: datacenter1
 
 
 # Azure Cosmos Cassandra -API

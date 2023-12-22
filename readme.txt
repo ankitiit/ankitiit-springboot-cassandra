@@ -4,8 +4,7 @@ describe keyspaces
 CREATE KEYSPACE schoolkeyspace
 WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
 
-CREATE KEYSPACE ecommercekeyspace
-WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+CREATE KEYSPACE ecommercekeyspace WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
 
 use schoolkeyspace;
 
