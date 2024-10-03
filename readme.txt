@@ -26,3 +26,6 @@ CREATE TABLE Product(
     contactNumber text,
     description text,
   );
+
+
+docker-compose -f cassandra-cluster-compose.yml up
